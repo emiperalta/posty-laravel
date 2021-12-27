@@ -1,5 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-  Index posts page
+  <div class="flex justify-center">
+    <div class="w-9/12 bg-white p-6 rounded-lg">
+      Posts
+    </div>
+  </div>
 @endsection
