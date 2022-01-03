@@ -7,7 +7,7 @@
 				@csrf
 				<div class="mb-4">
 					<label class="sr-only" for="name">Name</label>
-					<input class="bg-gray-100 border-2 w-full p-4 rounded-lg outline-gray-300 @error('name') border-red-500 @enderror" id="name" name="name" placeholder="Your name" type="text" />
+					<input class="bg-gray-100 border-2 w-full p-4 rounded-lg outline-gray-300 @error('name') border-red-500 @enderror" id="name" name="name" placeholder="Your name" value="{{ old('name') }}" type="text" />
 					@error('name')
 						<div class="text-red-500 mt-2 text-sm">
 							{{ $message }}
@@ -16,7 +16,7 @@
 				</div>
 				<div class="mb-4">
 					<label class="sr-only" for="username">Username</label>
-					<input class="bg-gray-100 border-2 w-full p-4 rounded-lg outline-gray-300 @error('username') border-red-500 @enderror" id="username" name="username" placeholder="Your username" type="text" />
+					<input class="bg-gray-100 border-2 w-full p-4 rounded-lg outline-gray-300 @error('username') border-red-500 @enderror" id="username" name="username" placeholder="Your username" value="{{ old('username') }}" type="text" />
 					@error('username')
 						<div class="text-red-500 mt-2 text-sm">
 							{{ $message }}
@@ -25,7 +25,7 @@
 				</div>
 				<div class="mb-4">
 					<label class="sr-only" for="email">Email</label>
-					<input class="bg-gray-100 border-2 w-full p-4 rounded-lg outline-gray-300 @error('email') border-red-500 @enderror" id="email" name="email" placeholder="Your email" type="email" />
+					<input class="bg-gray-100 border-2 w-full p-4 rounded-lg outline-gray-300 @error('email') border-red-500 @enderror" id="email" name="email" placeholder="Your email" value="{{ old('email') }}" type="email" />
 					@error('email')
 						<div class="text-red-500 mt-2 text-sm">
 							{{ $message }}
