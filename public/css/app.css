@@ -403,11 +403,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 .mt-2 {
   margin-top: 0.5rem;
 }
+.mr-2 {
+  margin-right: 0.5rem;
+}
 .mb-6 {
   margin-bottom: 1.5rem;
 }
-.mr-2 {
-  margin-right: 0.5rem;
+.mt-4 {
+  margin-top: 1rem;
 }
 .inline {
   display: inline;
@@ -487,9 +490,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
-.pl-3 {
-  padding-left: 0.75rem;
-}
 .pb-4 {
   padding-bottom: 1rem;
 }
@@ -500,8 +500,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 0.875rem;
   line-height: 1.25rem;
 }
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
 .font-medium {
   font-weight: 500;
+}
+.italic {
+  font-style: italic;
 }
 .text-white {
   --tw-text-opacity: 1;
